@@ -1,7 +1,7 @@
 #****************************************************************************************
 # Name: dirScan.ps1
-# Description: This script scans a directory and its sub directories to determine if the
-#              directory is ready to be archived.
+# Description: This PowerShell script scans a directory and its sub directories to determine
+#              if the directory is ready to be archived.
 #              The script outputs results to the console and to a report file.
 #              The script prompts the user for the directory to scan and the cut off 
 #              date to determine the need to archive.

@@ -2,7 +2,9 @@
  
  Description: This PowerShell script scans a directory and its sub directories to determine 
               if a directory is ready to be archived.
+
               The script outputs results the console and to a report file.
+              
               The script prompts the user for the directory to scan and the cut off 
               date to determine the need to archive.
               
