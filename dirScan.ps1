@@ -15,6 +15,13 @@
 #  https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file
 #
 #****************************************************************************************
+# Author: Myles MacInnes
+#
+# Copyright Notice
+# =======================================================================================
+# (C) Copyright Myles MacInnes, 2024 - Licensed under the terms of the CodeProject Open License
+# http://www.codeproject.com/info/cpol10.aspx
+#****************************************************************************************
 class dateInfo {
     [int]$fileCount
     [int]$subDirCount

@@ -19,4 +19,9 @@
   https://igorpuhalo.wordpress.com/2019/08/29/overcoming-long-path-problem-in-powershell/
   https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file
 
-  
+## Author: Myles MacInnes
+
+## Copyright Notice
+   (C) Copyright Myles MacInnes, 2024 - Licensed under the terms of the CodeProject Open License
+    https://www.codeproject.com/info/cpol10.aspx
+      
