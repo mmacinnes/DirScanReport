@@ -2,9 +2,9 @@
 # Name: dirScan.ps1
 # Description: This script scans a directory and its sub directories to determine if the
 #              directory is ready to be archived.
-#              The script will output the results to the console and to a report file.
-#              The script will prompt the user for the directory to scan and the cut off 
-#              date for archiving.
+#              The script outputs results to the console and to a report file.
+#              The script prompts the user for the directory to scan and the cut off 
+#              date to determine the need to archive.
 #              
 #              The script output will be in the current directory as: 
 #                       dirScanReport_yyyy-MM-dd_HH-mm-ss.txt
