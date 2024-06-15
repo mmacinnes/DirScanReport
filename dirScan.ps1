@@ -1,5 +1,6 @@
 #****************************************************************************************
 # Name: dirScan.ps1
+#
 # Description: This PowerShell script scans a directory and its sub directories to determine
 #              if the directory is ready to be archived.
 #              The script outputs results to the console and to a report file.
@@ -9,7 +10,7 @@
 #              The script output will be in the current directory as: 
 #                       dirScanReport_yyyy-MM-dd_HH-mm-ss.txt
 #
-# usefule reference 
+# Useful references: 
 #  https://igorpuhalo.wordpress.com/2019/08/29/overcoming-long-path-problem-in-powershell/
 #  https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file
 #

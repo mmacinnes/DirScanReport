@@ -11,7 +11,7 @@ Description: This PowerShell script scans a directory and its sub directories to
              The script output will be in the current directory as: 
                 dirScanReport_yyyy-MM-dd_HH-mm-ss.txt
 
-Usefule references:
+Useful references:
   https://igorpuhalo.wordpress.com/2019/08/29/overcoming-long-path-problem-in-powershell/
   https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file
 
