@@ -22,6 +22,8 @@
 # (C) Copyright Myles MacInnes, 2024 - Licensed under the terms of the CodeProject Open License
 # http://www.codeproject.com/info/cpol10.aspx
 #****************************************************************************************
+
+# Class to hold directory and summarized file date information
 class dateInfo {
     [int]$fileCount
     [int]$subDirCount
@@ -41,11 +43,8 @@ function Get-DirectoryInfo {
         $files = Get-ChildItem -LiteralPath ('\\?\'+$directory) -File -ErrorAction Stop
     }
     catch {
-        <#Do this if a terminating exception happens#>
-
         Write-Host "Error scanning files: $directory : $_"
         Write-Host " "
-        #Write-Output "Error scanning files: $directory : $_"
         return
     }
    
@@ -93,10 +92,8 @@ function Get-SubDirectoryInfo {
         $Directories = Get-ChildItem -LiteralPath $directory -Directory -ErrorAction Stop
     }
     catch {
-        <#Do this if a terminating exception happens#>
         Write-Host "Error scanning sub directory: $directory : $_"
         Write-Host " "
-        #Write-Output "Error scanning sub directory: $directory : $_"
         return
     }
 
@@ -130,11 +127,12 @@ function writeInfo {
     param (
         $message, $saveToFile, $filePath
     )
+    # writle all messages to the console
     Write-Host $message
 
     if ($saveToFile) {
         Try {
-            #Add Content to the report File
+            #Add message content to the report File
             Add-content -Path  $filePath -Value $message
         }
         Catch {
@@ -205,7 +203,6 @@ function outputInfo {
 $currDate = (Get-Date).tostring("yyyy-MM-dd_HH-mm-ss")
 
 # Set report file path
-#$filePath = "C:\\temp\\dirScanReport_" + $currDate + ".txt"
 $filePath = (Get-Location).Path +"\\dirScanReport_"+ $currDate + ".txt"
 
 # Set folder to scan
@@ -251,7 +248,6 @@ try {
     $Directories = Get-ChildItem -Path $directory -Directory -ErrorAction Stop
 }
 catch {
-    <#Do this if a terminating exception happens#>
     $message = "Error scanning directories: $directory : $_"
     writeInfo $message $true $filePath
     $message = " "
